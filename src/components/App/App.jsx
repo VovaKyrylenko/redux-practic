@@ -16,6 +16,7 @@ export const App = () => {
   const [todos, setTodos] = useState(
     JSON.parse(localStorage.getItem('todos')) ?? []
   );
+
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
