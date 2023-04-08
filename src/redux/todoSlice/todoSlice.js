@@ -22,6 +22,6 @@ export const todoSlice = createSlice({
 
 export const { addTodo, deleteTodo } = todoSlice.actions;
 export const todoReducer = todoSlice.reducer;
-export const getTodos = state => state.todos;
+export const getTodos = state => state.todo.todos;
 
 // slice.actions.increment(2);
